@@ -78,7 +78,7 @@ Não hesite em contribuir abrindo um **Pull Request** ou sugerir melhorias na se
 
 ## 📜 License
 
-Este projeto está disponível sob a licença **GNU**. O user é livre de o utilizar e modificar conforme necessário.
+Este projeto está disponível sob a licença **MIT**. O user é livre de o utilizar e modificar conforme necessário.
 
 ### 🔥 Agora podes manter o teu estado “Disponível” no Teams sem preocupações! 🚀
 
@@ -160,7 +160,7 @@ Feel free to contribute by opening a **Pull Request** or suggesting improvements
 
 ## 📜 License
 
-This project is available under the **GNU License**. You are free to use and modify it as needed.
+This project is available under the **MIT License**. You are free to use and modify it as needed.
 
 ### 🔥 Now you can keep your "Available" status on Teams without worries! 🚀
 
