@@ -64,7 +64,7 @@ Escolhe de quanto em quanto tempo o script é executado:
 7 - Fechar o script
 ```
 
-Para parar o script, **fecha a janela do terminal** ou digita **"7"**.
+Para parar o script, **fecha a janela do terminal** ou escreve **"7"** no terminal.
 
 ## 📌 Dicas
 
