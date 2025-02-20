@@ -6,7 +6,7 @@ Este repositório contém **dois scripts Python** que impedem que o Microsoft Te
 
 ## 🔧 Como Funciona?
 
-Cada script simula atividade no computador, evitando que o Teams ou outros aplicativos considerem a tua sessão inativa.
+Cada script simula atividade no computador, evitando que o Teams ou outras aplicações considerem a tua sessão inativa.
 
 - **NoawayTeams\_mouseMove.py** → Move ligeiramente o cursor do rato a cada X minutos.
 - **NoawayTeams\_keyboardPress.py** → Simula o pressionamento da tecla "Scroll Lock" a cada X minutos.
