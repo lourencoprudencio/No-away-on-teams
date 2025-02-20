@@ -72,11 +72,11 @@ Para parar o script, **fecha a janela do terminal** ou escreve **"7"** no termin
 
 ---
 
-## 🚀 Contributions
+## 🚀 Contribuições
 
 Não hesite em contribuir abrindo um **Pull Request** ou sugerir melhorias na secção **Issues**. 😊
 
-## 📜 License
+## 📜 Licença
 
 Este projeto está disponível sob a licença **MIT**. O user é livre de o utilizar e modificar conforme necessário.
 
