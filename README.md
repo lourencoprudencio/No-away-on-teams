@@ -93,7 +93,7 @@ This repository contains **two Python scripts** that prevent Microsoft Teams fro
 
 ⌨️ **Simulates pressing the "Scroll Lock" key**.
 
-✔️ Does not move the mouse, ideal for multi-monitor setups. ✔️ "Scroll Lock" key does not affect most software. ❌ Won't work if the keyboard is disabled.
+✔️ Does not move the mouse, ideal for multi-monitor setups. ✔️ "Scroll Lock" key does not affect most software.
 
 ## 🛠 How to Use?
 
