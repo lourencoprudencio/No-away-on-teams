@@ -23,7 +23,7 @@ Cada script simula atividade no computador, evitando que o Teams ou outras aplic
 
 ⌨️ **Simula o pressionamento da tecla "Scroll Lock"**.
 
-✔️ Não mexe no rato, sendo ideal para quem usa múltiplos monitores. ✔️ Tecla "Scroll Lock" não afeta a maioria dos softwares. ❌ Não funciona se o teclado estiver desativado.
+✔️ Não mexe no rato, sendo ideal para quem usa múltiplos monitores. ✔️ Tecla "Scroll Lock" não afeta a maioria dos softwares.
 
 ## 🛠 Como Usar?
 
