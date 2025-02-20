@@ -72,6 +72,18 @@ Para parar o script, **fecha a janela do terminal** ou escreve **"7"** no termin
 
 ---
 
+## 🚀 Contributions
+
+Feel free to contribute by opening a **Pull Request** or suggesting improvements in the **Issues** section. 😊
+
+## 📜 License
+
+This project is available under the **GNU License**. You are free to use and modify it as needed.
+
+### 🔥 Now you can keep your "Available" status on Teams without worries! 🚀
+
+---
+
 # 🇬🇧 NoAwayTeams – Prevents Microsoft Teams from Marking You as "Away"
 
 ## 🔧 How It Works?
