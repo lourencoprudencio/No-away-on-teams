@@ -148,7 +148,7 @@ Feel free to contribute by opening a **Pull Request** or suggesting improvements
 
 ## 📜 License
 
-This project is available under the **MIT License**. You are free to use and modify it as needed.
+This project is available under the **GNU License**. You are free to use and modify it as needed.
 
 ### 🔥 Now you can keep your "Available" status on Teams without worries! 🚀
 
