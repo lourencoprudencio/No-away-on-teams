@@ -84,7 +84,7 @@ Este projeto está disponível sob a licença **MIT**. O user é livre de o util
 
 ---
 
-# 🇬🇧 NoAwayTeams – Prevents Microsoft Teams from Marking You as "Away"
+# 🇬🇧 🟢 NoAwayTeams – Prevents Microsoft Teams from Marking You as "Away"
 
 ## 🔧 How It Works?
 
