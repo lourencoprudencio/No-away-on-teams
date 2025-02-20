@@ -8,7 +8,7 @@ executando = True
 
 # Função para o menu de escolha de tempo de ativação do script / Function for selecting script execution interval
 def escolher_tempo():
-    print("\nEscolhe de quanto em quanto tempo o script é executado:")  # Select how often the script runs
+    print("\nEscolhe de quanto em quanto tempo o script é executado / Choose how often the script is executed:")  # Select how often the script runs
     print("1 - 1 minuto / 1 minute")
     print("2 - 2 minutos / 2 minutes")
     print("3 - 3 minutos / 3 minutes")
@@ -26,13 +26,13 @@ def escolher_tempo():
     }
 
     try:
-        opcao = int(input("Indica de quanto em quanto tempo o script é executado: "))  # Specify script execution interval
+        opcao = int(input("Indica de quanto em quanto tempo o script é executado / Indicates how often the script is executed: "))  # Specify script execution interval
 
         if opcao in tempos:
             return tempos[opcao]  # Retorna o tempo correspondente / Returns the corresponding time
         
         elif opcao == 6:
-            tempo_personalizado = int(input("Indica o tempo em segundos: "))  # Specify time in seconds
+            tempo_personalizado = int(input("Indica o tempo em segundos / Indicates the time in seconds: "))  # Specify time in seconds
             if tempo_personalizado > 0:
                 return tempo_personalizado  
 
@@ -51,7 +51,7 @@ def escolher_tempo():
 def verificar_saida():
     global executando
     while executando:
-        opcao_sair = input("\n❓ Escreve '7' para fechar o script a qualquer momento: ").strip()  # Type '7' to stop the script anytime
+        opcao_sair = input("\n❓ Escreve '7' para fechar o script a qualquer momento / Type '7' to close the script at any time: ").strip()  # Type '7' to stop the script anytime
         if opcao_sair == "7":
             print("🛑 Script encerrado pelo user. / Script stopped by user.")
             executando = False  # Encerra o loop principal / Ends the main loop
@@ -65,7 +65,7 @@ def manter_ativo():
         
         # Obtém a hora atual e formata em HH:MM:SS / Get current time and format as HH:MM:SS
         hora_atual = datetime.now().strftime("%H:%M:%S")
-        print(f"🕒 Tecla pressionada - {hora_atual}")  # Key pressed message with exact time
+        print(f"🕒 Tecla pressionada / Key pressed - {hora_atual}")  # Key pressed message with exact time
 
         time.sleep(intervalo)  # Espera o tempo definido antes de repetir / Waits the defined time before repeating
 
