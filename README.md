@@ -74,13 +74,13 @@ Para parar o script, **fecha a janela do terminal** ou escreve **"7"** no termin
 
 ## 🚀 Contributions
 
-Feel free to contribute by opening a **Pull Request** or suggesting improvements in the **Issues** section. 😊
+Não hesite em contribuir abrindo um **Pull Request** ou sugerir melhorias na secção **Issues**. 😊
 
 ## 📜 License
 
-This project is available under the **GNU License**. You are free to use and modify it as needed.
+Este projeto está disponível sob a licença **GNU**. O user é livre de o utilizar e modificar conforme necessário.
 
-### 🔥 Now you can keep your "Available" status on Teams without worries! 🚀
+### 🔥 Agora podes manter o teu estado “Disponível” no Teams sem preocupações! 🚀
 
 ---
 
