@@ -1,8 +1,8 @@
 # 🟢 NoAwayTeams – Impede que o Microsoft Teams te marque como "Ausente"
 
-## 🇵🇹 Versão em Português
+## 🌟 Versão em Português
 
-Este repositório contém **dois scripts Python** e **um script em PowerShell que impedem que o Microsoft Teams te marque como **Ausente/Inativo**, garantindo que o teu status permaneça como **"Disponível"** enquanto o script está em execução.
+Este repositório contém **três scripts** que impedem que o Microsoft Teams te marque como **Ausente/Inativo**, garantindo que o teu status permaneça como **"Disponível"** enquanto o script está em execução.
 
 ## 🔧 Como Funciona?
 
@@ -10,31 +10,36 @@ Cada script simula atividade no computador, evitando que o Teams ou outras aplic
 
 - **NoawayTeams\_mouseMove.py** → Move ligeiramente o cursor do rato a cada X minutos.
 - **NoawayTeams\_keyboardPress.py** → Simula o pressionamento da tecla "Scroll Lock" a cada X minutos.
-- **NoawayTeams\_mouseMove.ps1** → Move o cursor do rato para a posição indicada a cada 30 segundos.
+- **NoawayTeams\_PowerShell.ps1** → Move o cursor do rato ligeiramente a cada 30 segundos através de um script em PowerShell.
 
-## 📜 Scripts Disponíveis
+## 🌟 Scripts Disponíveis
 
 ### 1️⃣ `NoawayTeams_mouseMove.py`
 
 🖱 **Movimenta ligeiramente o rato** para simular atividade.
 
-✔️ Mantém a sessão ativa sem pressionar teclas. ✔️ Funciona mesmo se estiveres a assistir a vídeos ou apresentações. ❌ Pode interferir em jogos ou em aplicações sensíveis ao movimento do rato.
+✔️ Mantém a sessão ativa sem pressionar teclas.\
+✔️ Funciona mesmo se estiveres a assistir a vídeos ou apresentações.\
+❌ Pode interferir em jogos ou em aplicações sensíveis ao movimento do rato.
 
 ### 2️⃣ `NoawayTeams_keyboardPress.py`
 
-⌨️ **Simula o pressionamento da tecla "Scroll Lock"**.
+💪 **Simula o pressionamento da tecla "Scroll Lock"**.
 
-✔️ Não mexe no rato, sendo ideal para quem usa múltiplos monitores. ✔️ Tecla "Scroll Lock" não afeta a maioria dos softwares.
+✔️ Não mexe no rato, sendo ideal para quem usa múltiplos monitores.\
+✔️ Tecla "Scroll Lock" não afeta a maioria dos softwares.
 
-### 3️⃣ `NoawayTeams_mouseMove.ps1`
+### 3️⃣ `NoawayTeams_PowerShell.ps1`
 
-🖱 **Move o cursor do rato para a posição indicada a cada 30 segundos
+🔠 **Executa um comando PowerShell que move ligeiramente o cursor do rato a cada 30 segundos.**
 
-✔️ Mantém a sessão ativa sem pressionar teclas. ✔️ Funciona mesmo se estiveres a assistir a vídeos ou apresentações. ❌ Pode interferir em jogos ou em aplicações sensíveis ao movimento do rato.
+✔️ Solução rápida e leve, sem necessidade de instalar dependências.\
+✔️ Pode ser executado em segundo plano no Windows.\
+✔️ Cada vez que o script é executado, retorna "True" na consola.
 
 ## 🛠 Como Usar?
 
-### 1️⃣ **Instala as dependências**
+### 1️⃣ **Instala as dependências (para scripts Python)**
 
 Certifica-te de que tens o Python instalado e instala as dependências:
 
@@ -56,7 +61,22 @@ ou
 python NoawayTeams_keyboardPress.py
 ```
 
-### 3️⃣ **Escolhe um intervalo de tempo**
+Para o PowerShell, primeiro executa este comando:
+
+```powershell
+Set-ExecutionPolicy Unrestricted -Scope Process
+```
+
+Depois, podes correr o script de uma das seguintes formas:
+- **Clicar com o botão direito do rato** sobre o ficheiro `.ps1` e selecionar **Run with PowerShell**
+- **Abrir um terminal PowerShell** e copiar o conteúdo do `.ps1` para execução manual
+- **Executar diretamente o script** no PowerShell com o comando:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\NoawayTeams_PowerShell.ps1
+```
+
+### 3️⃣ **Escolhe um intervalo de tempo (para scripts Python)**
 
 O menu interativo permitirá escolher de quanto em quanto tempo o script será executado:
 
@@ -75,15 +95,17 @@ Para parar o script, **fecha a janela do terminal** ou escreve **"7"** no termin
 
 ## 📌 Dicas
 
-✅ **Se baixares a tampa do portátil**, os scripts continuam a funcionar. ✅ **Funciona em trabalho remoto** sem necessidade de interação manual. ✅ **Executa em segundo plano** sem atrapalhar o teu fluxo de trabalho.
+✅ **Se baixares a tampa do portátil**, os scripts continuam a funcionar.\
+✅ **Funciona em trabalho remoto** sem necessidade de interação manual.\
+✅ **Executa em segundo plano** sem atrapalhar o teu fluxo de trabalho.
 
 ---
 
 ## 🚀 Contribuições
 
-Não hesite em contribuir abrindo um **Pull Request** ou sugerir melhorias na secção **Issues**. 😊
+Não hesite em contribuir abrindo um **Pull Request** ou sugerir melhorias na seção **Issues**. 😊
 
-## 📜 Licença
+## 📝 Licença
 
 Este projeto está disponível sob a licença **MIT**. O user é livre de o utilizar e modificar conforme necessário.
 
@@ -95,38 +117,46 @@ Este projeto está disponível sob a licença **MIT**. O user é livre de o util
 
 ## 🔧 How It Works?
 
-This repository contains **two Python scripts** that prevent Microsoft Teams from marking you as **Away/Inactive**, ensuring your status remains **"Available"** while the script is running.
+This repository contains **three scripts** that prevent Microsoft Teams from marking you as **Away/Inactive**, ensuring your status remains **"Available"** while the script is running.
 
 - **NoawayTeams\_mouseMove.py** → Moves the mouse cursor slightly every X minutes.
 - **NoawayTeams\_keyboardPress.py** → Simulates a "Scroll Lock" key press every X minutes.
+- **NoawayTeams\_PowerShell.ps1** → Moves the mouse cursor slightly every 30 seconds using a PowerShell script.
 
-## 📜 Available Scripts
+## 🌟 Available Scripts
 
 ### 1️⃣ `NoawayTeams_mouseMove.py`
 
 🖱 **Slightly moves the mouse** to simulate activity.
 
-✔️ Keeps your session active without pressing keys. ✔️ Works even if you're watching videos or presentations. ❌ May interfere with games or applications that rely on mouse movement.
+✔️ Keeps your session active without pressing keys.\
+✔️ Works even if you're watching videos or presentations.\
+❌ May interfere with games or applications that rely on mouse movement.
 
 ### 2️⃣ `NoawayTeams_keyboardPress.py`
 
-⌨️ **Simulates pressing the "Scroll Lock" key**.
+💪 **Simulates pressing the "Scroll Lock" key**.
 
-✔️ Does not move the mouse, ideal for multi-monitor setups. ✔️ "Scroll Lock" key does not affect most software.
+✔️ Does not move the mouse, ideal for multi-monitor setups.\
+✔️ "Scroll Lock" key does not affect most software.
+
+### 3️⃣ `NoawayTeams_PowerShell.ps1`
+
+🔠 **Runs a PowerShell command that moves the mouse cursor slightly every 30 seconds.**
+
+✔️ Fast and lightweight solution, no dependencies required.\
+✔️ Can run in the background on Windows.\
+✔️ Each time the script is executed, it returns "True" in the console.
 
 ## 🛠 How to Use?
 
-### 1️⃣ **Install dependencies**
-
-Make sure you have Python installed and install the necessary dependencies:
+For Python scripts, install dependencies:
 
 ```sh
 pip install pyautogui
 ```
 
-### 2️⃣ **Run the script**
-
-Choose a script and run it in the terminal:
+Run the script:
 
 ```sh
 python NoawayTeams_mouseMove.py
@@ -138,36 +168,17 @@ or
 python NoawayTeams_keyboardPress.py
 ```
 
-### 3️⃣ **Choose a time interval**
+For PowerShell, first run:
 
-An interactive menu will allow you to choose how often the script executes:
-
-```
-Choose how often the script executes:
-1 - 1 minute
-2 - 2 minutes
-3 - 3 minutes
-4 - 4 minutes
-5 - 5 minutes
-6 - Custom
-7 - Exit script
+```powershell
+Set-ExecutionPolicy Unrestricted -Scope Process
 ```
 
-To stop the script, **close the terminal window** or type **"7"**.
+Then execute the script by:
+- **Right-clicking** the `.ps1` file and selecting **Run with PowerShell**
+- **Opening PowerShell**, copying the `.ps1` contents, and running manually
+- **Running the script directly** in PowerShell with:
 
-## 📌 Tips
-
-✅ **If you close the laptop lid**, the scripts continue running. ✅ **Works for remote work** without manual interaction. ✅ **Runs in the background** without disrupting your workflow.
-
----
-
-## 🚀 Contributions
-
-Feel free to contribute by opening a **Pull Request** or suggesting improvements in the **Issues** section. 😊
-
-## 📜 License
-
-This project is available under the **MIT License**. You are free to use and modify it as needed.
-
-### 🔥 Now you can keep your "Available" status on Teams without worries! 🚀
-
+```powershell
+powershell -ExecutionPolicy Bypass -File .\NoawayTeams_PowerShell.ps1
+```
