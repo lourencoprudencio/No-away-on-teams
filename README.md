@@ -28,7 +28,7 @@ Cada script simula atividade no computador, evitando que o Teams ou outras aplic
 💪 **Simula o pressionamento da tecla "Scroll Lock"**.
 
 ✔️ Não mexe no rato, sendo ideal para quem usa múltiplos monitores.\
-✔️ Tecla "Scroll Lock" não afeta a maioria dos softwares.
+✔️ Tecla "Scroll Lock" não afeta a maioria dos softwares.\
 ✔️ Cada vez que o script é executado, retorna "🕒 Tecla pressionada" na consola.
 
 ### 3️⃣ `NoawayTeams_PowerShell.ps1`
