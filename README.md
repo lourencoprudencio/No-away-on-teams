@@ -2,7 +2,7 @@
 
 ## 🇵🇹 Versão em Português
 
-Este repositório contém **dois scripts Python** que impedem que o Microsoft Teams te marque como **Ausente/Inativo**, garantindo que o teu status permaneça como **"Disponível"** enquanto o script está em execução.
+Este repositório contém **dois scripts Python** e **um script em PowerShell que impedem que o Microsoft Teams te marque como **Ausente/Inativo**, garantindo que o teu status permaneça como **"Disponível"** enquanto o script está em execução.
 
 ## 🔧 Como Funciona?
 
@@ -10,6 +10,7 @@ Cada script simula atividade no computador, evitando que o Teams ou outras aplic
 
 - **NoawayTeams\_mouseMove.py** → Move ligeiramente o cursor do rato a cada X minutos.
 - **NoawayTeams\_keyboardPress.py** → Simula o pressionamento da tecla "Scroll Lock" a cada X minutos.
+- **NoawayTeams\_mouseMove.ps1** → Move o cursor do rato para a posição indicada a cada 30 segundos.
 
 ## 📜 Scripts Disponíveis
 
@@ -24,6 +25,12 @@ Cada script simula atividade no computador, evitando que o Teams ou outras aplic
 ⌨️ **Simula o pressionamento da tecla "Scroll Lock"**.
 
 ✔️ Não mexe no rato, sendo ideal para quem usa múltiplos monitores. ✔️ Tecla "Scroll Lock" não afeta a maioria dos softwares.
+
+### 3️⃣ `NoawayTeams_mouseMove.ps1`
+
+🖱 **Move o cursor do rato para a posição indicada a cada 30 segundos
+
+✔️ Mantém a sessão ativa sem pressionar teclas. ✔️ Funciona mesmo se estiveres a assistir a vídeos ou apresentações. ❌ Pode interferir em jogos ou em aplicações sensíveis ao movimento do rato.
 
 ## 🛠 Como Usar?
 
