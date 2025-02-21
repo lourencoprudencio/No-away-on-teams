@@ -78,7 +78,7 @@ Depois, podes correr o script de uma das seguintes formas:
 - **Executar diretamente o script** no PowerShell com o comando:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\NoawayTeams_PowerShell.ps1
+powershell -ExecutionPolicy Bypass -File .\NoawayTeams_mouseMove.ps1
 ```
 
 ### 3️⃣ **Escolhe um intervalo de tempo (para scripts Python)**
@@ -189,5 +189,5 @@ Then execute the script by:
 - **Running the script directly** in PowerShell with:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\NoawayTeams_PowerShell.ps1
+powershell -ExecutionPolicy Bypass -File .\NoawayTeams_mouseMove.ps1
 ```
