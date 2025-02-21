@@ -157,6 +157,8 @@ This repository contains **three scripts** that prevent Microsoft Teams from mar
 
 ## 🛠 How to Use?
 
+🔹 No administrator permissions required, as long as Python and dependencies are installed, or for PowerShell scripts, simply use the indicated command.
+
 For Python scripts, install dependencies:
 
 ```sh
