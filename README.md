@@ -42,6 +42,8 @@ Cada script simula atividade no computador, evitando que o Teams ou outras aplic
 
 ## 🛠 Como Usar?
 
+🔹 Sem necessidade de permissões de administrador, desde que o Python e as dependências estejam instaladas ou, para scripts PowerShell, basta usar o comando indicado.
+
 ### 1️⃣ **Instala as dependências (para scripts Python)**
 
 Certifica-te de que tens o Python instalado e instala as dependências:
