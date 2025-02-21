@@ -72,7 +72,7 @@ Set-ExecutionPolicy Unrestricted -Scope Process
 
 Depois, podes correr o script de uma das seguintes formas:
 - **Clicar com o botão direito do rato** sobre o ficheiro `.ps1` e selecionar **Run with PowerShell**
-- **Abrir um terminal PowerShell** e copiar o conteúdo do `.ps1` para execução manual
+- **Abrir um terminal PowerShell ou notepad** e copiar o conteúdo do `.ps1` para execução manual
 - **Executar diretamente o script** no PowerShell com o comando:
 
 ```powershell
@@ -181,7 +181,7 @@ Set-ExecutionPolicy Unrestricted -Scope Process
 
 Then execute the script by:
 - **Right-clicking** the `.ps1` file and selecting **Run with PowerShell**
-- **Opening PowerShell**, copying the `.ps1` contents, and running manually
+- **Opening PowerShell or notepad**, copying the `.ps1` contents, and running manually
 - **Running the script directly** in PowerShell with:
 
 ```powershell
