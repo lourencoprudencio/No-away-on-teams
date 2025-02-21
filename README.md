@@ -20,8 +20,8 @@ Cada script simula atividade no computador, evitando que o Teams ou outras aplic
 
 ✔️ Mantém a sessão ativa sem pressionar teclas.\
 ✔️ Funciona mesmo se estiveres a assistir a vídeos ou apresentações.\
+✔️ Cada vez que o script é executado, retorna "🖱 Mouse movimentado com sucesso" na consola.\
 ❌ Pode interferir em jogos ou em aplicações sensíveis ao movimento do rato.
-✔️ Cada vez que o script é executado, retorna "🖱 Mouse movimentado com sucesso" na consola.
 
 ### 2️⃣ `NoawayTeams_keyboardPress.py`
 
@@ -37,7 +37,8 @@ Cada script simula atividade no computador, evitando que o Teams ou outras aplic
 
 ✔️ Solução rápida e leve, sem necessidade de instalar dependências.\
 ✔️ Pode ser executado em segundo plano no Windows.\
-✔️ Cada vez que o script é executado, retorna "True" na consola.
+✔️ Cada vez que o script é executado, retorna "True" na consola.\
+❌ Pode interferir em jogos ou em aplicações sensíveis ao movimento do rato.
 
 ## 🛠 Como Usar?
 
@@ -133,15 +134,15 @@ This repository contains **three scripts** that prevent Microsoft Teams from mar
 
 ✔️ Keeps your session active without pressing keys.\
 ✔️ Works even if you're watching videos or presentations.\
+✔️ Each time the script is executed, it returns "🖱 Mouse moved successfully" in the console." in the console.\
 ❌ May interfere with games or applications that rely on mouse movement.
-✔️ Each time the script is executed, it returns "✔️ Each time the script is executed, it returns "True" in the console." in the console.
 
 ### 2️⃣ `NoawayTeams_keyboardPress.py`
 
 💪 **Simulates pressing the "Scroll Lock" key**.
 
 ✔️ Does not move the mouse, ideal for multi-monitor setups.\
-✔️ "Scroll Lock" key does not affect most software.
+✔️ "Scroll Lock" key does not affect most software.\
 ✔️ Each time the script is executed, it returns "🕒 Key pressed" in the console.
 
 ### 3️⃣ `NoawayTeams_PowerShell.ps1`
