@@ -1,7 +1,7 @@
 import time  # Pausas no script / Script pauses
 import ctypes  # Manipula funções do SO / Handles OS functions
 import threading  # Permite verificar a opção de saída sem interromper o loop principal / Allows exit option check without interrupting main loop
-from datetime import datetime  # Exibe a hora exata da execução / Displays exact execution time
+from datetime import datetime, timedelta  # Exibe a hora exata da execução / Displays exact execution time
 
 # Variável global para controlar a execução do script / Global variable to control script execution
 executando = True
@@ -65,7 +65,8 @@ def manter_ativo():
         
         # Obtém a hora atual e formata em HH:MM:SS / Get current time and format as HH:MM:SS
         hora_atual = datetime.now().strftime("%H:%M:%S")
-        print(f"🕒 Tecla pressionada / Key pressed - {hora_atual}")  # Key pressed message with exact time
+        proximo_movimento = (datetime.now() + timedelta(seconds=intervalo)).strftime("%H:%M:%S")  # Calcula o próximo movimento / Calculates next movement time
+        print(f"🕒 Tecla pressionada / Key pressed - {hora_atual} / Próximo clique na tecla - {proximo_movimento} / Next key press - {proximo_movimento}")  # Key pressed message with exact time
 
         time.sleep(intervalo)  # Espera o tempo definido antes de repetir / Waits the defined time before repeating
 

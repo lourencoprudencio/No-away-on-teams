@@ -1,7 +1,7 @@
 import pyautogui  # Controla o cursor do rato / Controls the mouse cursor
 import time  # Adiciona pausas no script / Adds pauses to the script
 import threading  # Permite verificar a opção de saída sem interromper o loop principal / Allows exit check without interrupting the main loop
-from datetime import datetime  # Importa datetime para exibir a hora exata / Imports datetime to display the exact time
+from datetime import datetime, timedelta  # Importa datetime para exibir a hora exata / Imports datetime to display the exact time
 
 # Variável global para controlar a execução do script / Global variable to control script execution
 executando = True
@@ -76,9 +76,10 @@ while executando:
 
     # Recebe a hora atual e formata HH:MM:SS / Gets the current time and formats as HH:MM:SS
     hora_atual = datetime.now().strftime("%H:%M:%S")
+    proximo_movimento = (datetime.now() + timedelta(seconds=intervalo)).strftime("%H:%M:%S")  # Calcula o próximo movimento / Calculates next movement time
     
-    # Mensagem com o horário da execução / Message with execution time
-    print(f"🖱 Mouse movimentado com sucesso - {hora_atual} / Mouse moved successfully - {hora_atual}")
+    # Mensagem com o horário da execução e o próximo movimento / Message with execution time and next movement
+    print(f"🖱 Mouse movimentado com sucesso - {hora_atual} / Mouse moved successfully - {hora_atual} / Próximo Movimento do mouse - {proximo_movimento} / Next mouse move - {proximo_movimento}")
 
     time.sleep(intervalo)  # Aguarda o tempo definido antes da próxima execução / Waits for the defined interval before the next execution
 
