@@ -15,7 +15,7 @@ def escolher_tempo():
     print("4 - 4 minutos / 4 minutes")
     print("5 - 5 minutos / 5 minutes")
     print("6 - Personalizado / Custom")
-    print("7 - Fechar o script / Close the script")  # Option to stop the script
+    print("7 - Fechar o script / Close the script")
 
     tempos = {
         1: 60,   # 1 minuto / 1 minute
@@ -46,7 +46,7 @@ def escolher_tempo():
     print("O valor é inválido! Iniciado com o valor padrão de 4 minutos. / Invalid value! Starting with the default 4-minute setting.")
     return 240  
 
-# Função para verificar se o user quer encerrar o script enquanto ele está a correr
+# Função para verificar se o user quer encerrar o script enquanto ele está a ser executado
 # Function to check if the user wants to stop the script while it's running
 def verificar_saida():
     global executando
@@ -67,20 +67,29 @@ print("🔴 Para parar, fecha esta janela ou digita '7' para encerrar. / To stop
 thread_verificacao = threading.Thread(target=verificar_saida, daemon=True)
 thread_verificacao.start()
 
-# Loop principal que mantém o script ativo / Main loop that keeps the script running
+# Função que move o mouse periodicamente / Function that moves the mouse periodically
+def mover_mouse():
+    while executando:
+        x, y = pyautogui.position()  # Recebe a posição atual do cursor / Gets the current cursor position
+        pyautogui.moveTo(x + 1, y)  # Mexe o cursor 1 pixel para a direita / Moves the cursor 1 pixel to the right
+        time.sleep(0.5)
+        pyautogui.moveTo(x, y)  # Mexe de volta o cursor à posição original / Moves the cursor back to the original position
+
+        # Recebe a hora atual e formata HH:MM:SS / Gets the current time and formats as HH:MM:SS
+        hora_atual = datetime.now().strftime("%H:%M:%S")
+        proximo_movimento = (datetime.now() + timedelta(seconds=intervalo)).strftime("%H:%M:%S")  # Calcula o próximo movimento / Calculates next movement time
+        
+        # Mensagem com o horário da execução e o próximo movimento / Message with execution time and next movement
+        print(f"🖱 Mouse movimentado com sucesso - {hora_atual} / Mouse moved successfully - {hora_atual} / Próximo Movimento do mouse - {proximo_movimento} / Next mouse move - {proximo_movimento}")
+
+        time.sleep(intervalo)  # Aguarda o tempo definido antes da próxima execução / Waits for the defined interval before the next execution
+
+# Inicia a thread para mover o mouse em segundo plano / Starts the thread to move the mouse in the background
+thread_mouse = threading.Thread(target=mover_mouse, daemon=True)
+thread_mouse.start()
+
+# Mantém o script ativo enquanto "executando" for True / Keeps the script running while "executando" is True
 while executando:
-    x, y = pyautogui.position()  # Recebe a posição atual do cursor / Gets the current cursor position
-    pyautogui.moveTo(x + 1, y)  # Mexe o cursor 1 pixel para a direita / Moves the cursor 1 pixel to the right
-    time.sleep(0.5)
-    pyautogui.moveTo(x, y)  # Mexe de volta o cursor à posição original / Moves the cursor back to the original position
-
-    # Recebe a hora atual e formata HH:MM:SS / Gets the current time and formats as HH:MM:SS
-    hora_atual = datetime.now().strftime("%H:%M:%S")
-    proximo_movimento = (datetime.now() + timedelta(seconds=intervalo)).strftime("%H:%M:%S")  # Calcula o próximo movimento / Calculates next movement time
-    
-    # Mensagem com o horário da execução e o próximo movimento / Message with execution time and next movement
-    print(f"🖱 Mouse movimentado com sucesso - {hora_atual} / Mouse moved successfully - {hora_atual} / Próximo Movimento do mouse - {proximo_movimento} / Next mouse move - {proximo_movimento}")
-
-    time.sleep(intervalo)  # Aguarda o tempo definido antes da próxima execução / Waits for the defined interval before the next execution
+    time.sleep(1)  # Mantém o loop ativo até o usuário encerrar / Keeps the loop running until user stops it
 
 print("✅ O script foi finalizado com sucesso. / The script was successfully terminated.")
